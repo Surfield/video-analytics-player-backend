@@ -30,3 +30,10 @@ docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearc
 ```
 docker run -d  -p 5601:5601 -h kibana --name kibana --link elasticsearch:elasticsearch kibana:6.7.0
 ```
+
+### Gotchas you can only run the above commands once
+```
+docker start elasticsearch
+docer start kibana
+```
+
