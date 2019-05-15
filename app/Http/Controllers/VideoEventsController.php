@@ -14,7 +14,7 @@ class VideoEventsController extends Controller
         $client = ClientBuilder::create()->build();
         $data['@timestamp'] = time();
         $params = [
-            'index' => 'my_index2',
+            'index' => 'main',
             'type' => 'my_type',
             'id' => rand(),
             'body' => $data
